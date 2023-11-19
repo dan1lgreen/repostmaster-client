@@ -4,7 +4,6 @@ import Styles from "./ContactForm.module.css";
 import Conformation from "../../assets/images/Group 269.png";
 
 export default function ContactForm() {
-  const backendUrl = process.env.REACT_APP_BACKEND_API;
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -45,7 +44,7 @@ export default function ContactForm() {
     if (nameError || emailError) return;
 
     try {
-      await axios.post(`${backendUrl}/send-email`, {
+      await axios.post(`https://repostmaster-server.cyclic.app/send-email`, {
         name: form.name,
         email: form.email,
       });
