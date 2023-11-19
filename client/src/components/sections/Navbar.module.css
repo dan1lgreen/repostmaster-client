@@ -1,0 +1,56 @@
+.navbar__container {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar__logo {
+  margin-left: 10%;
+}
+
+.navbar__logo h1 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 54.5px; /* 109% */
+  text-transform: capitalize;
+  margin: 0;
+}
+
+.navbar__signup__button {
+  margin-right: 10%;
+}
+
+.navbar__signup__button button {
+  border: none;
+  padding: 12px 28px;
+  border-radius: 5px;
+  background: var(
+    --Main-Color,
+    linear-gradient(93deg, #ff9898 0.48%, #8054ff 100%)
+  );
+  color: #fff;
+  font-family: "poppins", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+  .navbar__container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .navbar__logo {
+    margin: 0;
+  }
+  .navbar__signup__button {
+    margin: 0;
+  }
+}

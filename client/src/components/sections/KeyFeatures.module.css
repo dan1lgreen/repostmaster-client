@@ -1,0 +1,59 @@
+.key__features__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.key__features__content {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  margin: 0% 10% 0% 10%;
+}
+
+.key__features__title {
+  width: 100%;
+}
+
+.key__features__title h2 {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 80px;
+  color: #fff;
+}
+
+.key__features__subtitle {
+  width: 80%;
+}
+
+.key__features__subtitle h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+.key__features__content__cards {
+  width: 100%;
+  margin-top: 5%;
+}
+
+@media screen and (max-width: 700px) {
+  .key__features__title {
+    text-align: center;
+  }
+
+  .key__features__subtitle {
+    text-align: center;
+    width: 100%;
+  }
+}

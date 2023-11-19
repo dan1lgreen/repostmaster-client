@@ -1,0 +1,159 @@
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.hero__content__top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  width: 50%;
+}
+
+.hero__title {
+  width: 100%;
+}
+
+.hero__title h2 {
+  margin: 0;
+}
+
+.hero__title h2 span {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 54.5px; /* 109% */
+  text-transform: capitalize;
+}
+
+.hero__subtitle {
+  margin-top: 14px;
+}
+
+.hero__subtitle h2 {
+  margin: 0;
+}
+
+.hero__subtitle span {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.hero__signup__button {
+  margin-top: 38px;
+  position: relative;
+  z-index: 2;
+}
+
+.hero__signup__button button {
+  border: none;
+  padding: 12px 28px;
+  border-radius: 5px;
+  background: var(
+    --Main-Color,
+    linear-gradient(93deg, #ff9898 0.48%, #8054ff 100%)
+  );
+  color: #fff;
+  font-family: "poppins", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.hero__content__bottom {
+  display: inline-flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+  position: relative;
+}
+
+.hero__text {
+  background: #18181c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  margin-left: 5%;
+  padding: 0% 2% 0% 2%;
+  /* width: 514px; */
+  height: 494px;
+  width: 35%;
+  position: relative;
+  z-index: 2;
+}
+
+.hero__text h2 {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+.hero__text h2 span {
+  margin: 0;
+  font-family: "poppins", sans-serif;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 66px;
+}
+
+.hero__image {
+  width: 50%;
+  position: relative;
+  z-index: 2;
+}
+
+.hero__image img {
+  width: 100%;
+  height: 100%;
+}
+
+.subtract {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 700px) {
+  .hero__content__top {
+    width: 80%;
+  }
+  .hero__content__bottom {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero__text {
+    margin-left: 0;
+    width: 80%;
+  }
+}
